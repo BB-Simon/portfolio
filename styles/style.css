@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,21 @@
 }
 
 body {
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 
 /* Global Styles */
-ul, h1, h2, h3, h4, h5, h6, p {
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
+
 ul li {
   list-style: none;
 }
@@ -22,14 +31,13 @@ ul li {
   min-height: 48px;
   height: 48px;
   max-height: 48px;
-  background: #ffffff;
+  background: #fff;
   padding: 0 24px;
 
   /* Layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -56,22 +64,18 @@ ul li {
 .header {
   width: 100%;
   min-height: calc(100vh - 48px);
-  background: #ffffff url(../assets/header-shapes\ mobile@2x.png);
+  background: #fff url(../assets/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
-  /* background-position-x: 0px;
-  background-position-y: 0px; */
   padding: 12px 24px;
   margin-bottom: 50px;
   border-bottom-left-radius: 100px;
-
 
   /* header layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 #title {
@@ -80,8 +84,7 @@ ul li {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
-
+  color: #172b4d;
   margin: 12px 0;
 }
 
@@ -101,29 +104,22 @@ ul li {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
   margin: 12px 0;
 }
+
 .icons-wrapper {
   display: flex;
   align-items: center;
   margin: 12px 0;
 }
 
-.icon-btn:hover {
-  width: 45px;
-  height: 45px;
-  background: #E5E5E5;
-  margin-right: 0px;
-  cursor: pointer;
-}
 .icons-wrapper a {
-  font-size: 1px;
   margin-right: 20px;
   text-decoration: none;
 }
-.icons-wrapper a svg path:hover {
-  fill: #172B4D;
 
+.icons-wrapper a svg path:hover {
+  fill: #172b4d;
   transition: fill 0.3s ease-in-out;
 }
