@@ -34,9 +34,9 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">yml for linters</a></li>
-    <li><a href="https://reactjs.org/">html</a></li>
-    <li><a href="https://reactjs.org/">css</a></li>
+    <li><a href="https://github.com/BB-Simon/">yml for linters</a></li>
+    <li><a href="https://www.w3schools.com/html/">html</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">css</a></li>
   </ul>
 </details>
 
@@ -60,9 +60,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+<!-- AUTHOR -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 👤 **BB-Simon**
 
