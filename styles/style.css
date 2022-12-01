@@ -29,6 +29,10 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav-items-wrapper {
@@ -46,4 +50,80 @@ ul li {
 .logo-wrapper {
   display: flex;
   align-items: center;
+}
+
+/* Header Styles */
+.header {
+  width: 100%;
+  min-height: calc(100vh - 48px);
+  background: #ffffff url(../assets/header-shapes\ mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  /* background-position-x: 0px;
+  background-position-y: 0px; */
+  padding: 12px 24px;
+  margin-bottom: 50px;
+  border-bottom-left-radius: 100px;
+
+
+  /* header layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+
+  margin: 12px 0;
+}
+
+#description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+#title-contact {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+  margin: 12px 0;
+}
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.icon-btn:hover {
+  width: 45px;
+  height: 45px;
+  background: #E5E5E5;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.icons-wrapper a {
+  font-size: 1px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.icons-wrapper a svg path:hover {
+  fill: #172B4D;
+
+  transition: fill 0.3s ease-in-out;
 }
