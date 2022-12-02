@@ -61,19 +61,27 @@ ul li {
 
 /* Header Styles */
 .header-section {
-  margin-bottom: 114px;
-}
-
-.header {
   width: 100%;
   min-height: calc(100vh - 48px);
   background: #fff url(../assets/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left center;
-  padding: 12px 24px;
+  background-position-x: 0;
+  background-position-y: 70px;
   border-bottom-left-radius: 100px;
+  padding: 48px 0px;
+  margin-bottom: 114px;
 
+  /* header layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  padding: 48px 24px;
+  
   /* header layout */
   display: flex;
   flex-direction: column;
@@ -160,7 +168,7 @@ ul li {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 12px 0;
 }
 
@@ -255,4 +263,87 @@ ul li {
   background: #396de2;
   color: #fff;
   transition: all 0.3s ease-in-out;
+}
+
+/* About section styles */
+.about-section {
+  background: #fff;
+  padding: 114px 24px;
+  border-top-right-radius: 100px;
+}
+
+#about-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+}
+
+#about-description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 12px 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  margin: 36px 0;
+}
+
+.skills-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 12px;
+  cursor: pointer;
+}
+
+.skills-list-item > h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+.skills-list-item > img {
+  padding: 8px;
+}
+.skills-list-item-divider {
+  height: 1px;
+  background: #DFE1E6;
+  margin: 0px;
+}
+
+.languages {
+  padding: 12px;
+}
+
+.language-item {
+  background: #F7F7F9;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.language-item > h5 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin-left: 16px;
 }
