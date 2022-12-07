@@ -350,3 +350,101 @@ ul li {
   color: #253858;
   margin-left: 16px;
 }
+
+/* Contact me section styles */
+.contact-me-section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me-section-container {
+  background: #6070FF url(../assets/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  background-position-y: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 104px 24px 0px;
+  border-top-left-radius: 100px;
+}
+
+.contact-me-section-container > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;  
+  color: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+
+  /* Input text style */
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172B4D;
+  border-radius: 8px;
+  border: none;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="email"]:hover,
+input[type="email"]:focus,
+textarea:hover
+textarea:focus {
+  border: none;
+}
+input[type="submit"]{
+  width: 140px;
+  height: 48px;
+  padding: 12px 16px;
+  left: 24px;
+  top: 5317px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-me-section-container > p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.indicator {
+  width: 134px;
+  height: 5px;
+  position: absolute;
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+}
