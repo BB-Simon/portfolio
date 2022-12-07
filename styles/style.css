@@ -424,10 +424,22 @@ input[type="submit"] {
   width: 140px;
   height: 48px;
   padding: 12px 16px;
-  left: 24px;
-  top: 5317px;
   background: #fff;
   border-radius: 8px;
+  border: none;
+
+  /* Input text style */
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
   border: none;
 }
 
