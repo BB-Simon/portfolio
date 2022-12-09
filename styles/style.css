@@ -53,10 +53,45 @@ ul li {
   align-items: center;
   cursor: pointer;
 }
+.nav-item > a {
+  /* Fonts */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  padding: 12px;
+  text-decoration: none;
+}
 
 .logo-wrapper {
   display: flex;
   align-items: center;
+}
+
+.nav-item-desktop {
+  display: none;
+}
+
+/* Desktop version of navbar */
+@media screen and (min-width: 768px) {
+  .navbar {
+    min-height: 72px;
+    max-height: 72px;
+    padding: 0 142px;
+  }
+
+  .nav-item-mobile {
+    display: none;
+  }
+  .nav-item-desktop {
+    display: flex;
+    align-items: center;
+  }
+  .nav-item-desktop-wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Header Styles */
@@ -68,13 +103,14 @@ ul li {
   background-size: contain;
   background-position-y: 60px;
   border-bottom-left-radius: 100px;
-  padding: 48px 4px;
-  margin-bottom: 114px;
+  /* padding: 48px 4px; */
+  margin: 48px 0 114px;
 
   /* header layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -89,7 +125,6 @@ ul li {
 
 #title {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -99,7 +134,6 @@ ul li {
 
 #description {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -131,6 +165,34 @@ ul li {
 .icons-wrapper a svg path:hover {
   fill: #172b4d;
   transition: fill 0.3s ease-in-out;
+}
+
+/* Desktop version of header section */
+@media screen and (min-width: 768px) {
+  .header-section {
+    width: 100%;
+    min-height: calc(100vh - 72px);
+    background: #fff url(../assets/desktop/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center; 
+    /* background-position-x: 20px;
+    background-position-y: 48px; */
+    border-bottom-left-radius: 100px;
+    margin: 72px 0 114px;
+  }
+  .header {
+    width: 64%;
+  }
+  #title {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+  #description {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 /* Works Styles */
