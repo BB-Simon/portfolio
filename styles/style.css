@@ -687,8 +687,8 @@ input[type="submit"]:hover {
     max-width: 450px;
     align-items: center;
   }
+
   .footer-indicator {
     display: none;
   }
 }
-
