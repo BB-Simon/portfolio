@@ -191,6 +191,19 @@ ul li {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
+    animation-name: rightToLeft;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(-160px);
+    }
   }
 
   #description {
