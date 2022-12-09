@@ -40,6 +40,7 @@ ul li {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .nav-items-wrapper {
@@ -54,9 +55,47 @@ ul li {
   cursor: pointer;
 }
 
+.nav-item > a {
+  /* Fonts */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  padding: 12px;
+  text-decoration: none;
+}
+
 .logo-wrapper {
   display: flex;
   align-items: center;
+}
+
+.nav-item-desktop {
+  display: none;
+}
+
+/* Desktop version of navbar */
+@media screen and (min-width: 768px) {
+  .navbar {
+    min-height: 72px;
+    max-height: 72px;
+    padding: 0 142px;
+  }
+
+  .nav-item-mobile {
+    display: none;
+  }
+
+  .nav-item-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item-desktop-wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Header Styles */
@@ -68,13 +107,13 @@ ul li {
   background-size: contain;
   background-position-y: 60px;
   border-bottom-left-radius: 100px;
-  padding: 48px 4px;
-  margin-bottom: 114px;
+  margin: 48px 0 114px;
 
   /* header layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -89,7 +128,6 @@ ul li {
 
 #title {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -99,7 +137,6 @@ ul li {
 
 #description {
   font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -133,6 +170,35 @@ ul li {
   transition: fill 0.3s ease-in-out;
 }
 
+/* Desktop version of header section */
+@media screen and (min-width: 768px) {
+  .header-section {
+    width: 100%;
+    min-height: calc(100vh - 72px);
+    background: #fff url(../assets/desktop/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    border-bottom-left-radius: 100px;
+    margin: 72px 0 114px;
+  }
+
+  .header {
+    width: 64%;
+  }
+
+  #title {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  #description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 /* Works Styles */
 .works-section {
   display: grid;
@@ -150,6 +216,17 @@ ul li {
   margin-bottom: 88px;
 
   /* Card Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-conntainer > img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -267,6 +344,76 @@ ul li {
   transition: all 0.3s ease-in-out;
 }
 
+/* Desktop version of works section */
+@media screen and (min-width: 768px) {
+  .works-section {
+    padding: 0 142px;
+    margin-bottom: 54px;
+  }
+
+  .card-conntainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .card-conntainer:last-child {
+    margin-bottom: 88px;
+  }
+
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+  #order3 {
+    order: 3;
+  }
+
+  #order4 {
+    order: 4;
+  }
+
+  #order2 {
+    order: 2;
+  }
+
+  #order1 {
+    order: 1;
+  }
+
+  .card-conntainer:hover {
+    cursor: pointer;
+    outline: 2px solid #a7aeff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .card-content {
+    width: 50%;
+    padding: 48px;
+  }
+
+  .card-conntainer > img {
+    width: 50%;
+    height: 100%;
+  }
+
+  #card-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  #card-description {
+    font-size: 16px;
+  }
+
+  .card-meta-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 /* About section styles */
 .about-section {
   background: #fff;
@@ -351,31 +498,77 @@ ul li {
   margin-left: 16px;
 }
 
+/* Desktop version of about me section */
+@media screen and (min-width: 768px) {
+  .about-section {
+    padding: 114px 142px;
+    display: flex;
+  }
+
+  #about-content {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 2;
+  }
+
+  #skills {
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 3;
+  }
+
+  .skills-list {
+    margin: 0 0 36px 24px;
+  }
+
+  .card-cta-wrapper {
+    margin: 32px 0 12px;
+  }
+
+  .languages {
+    display: flex;
+  }
+
+  .language-item {
+    min-width: 122px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
+  .language-item > h5 {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
 /* Contact me section styles */
 .contact-me-section {
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-me-section-container {
-  background: #6070ff url(../assets/contact\ form\ shapes-mobile@2x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 100%;
-  background-position-y: 20px;
+  background: #6070ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 104px 24px 0;
+  padding: 22px 0 48px;
   border-top-left-radius: 100px;
 }
 
-.contact-me-section-container > h1 {
+.contact-me-section-content {
+  background: url(../assets/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  background-position-y: 0;
+  padding: 48px 24px 0;
+  position: relative;
+}
+
+.contact-me-section-content > h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -383,7 +576,7 @@ ul li {
   line-height: 52px;
   color: #fff;
   text-align: center;
-  margin-bottom: 12px;
+  margin: 48px 0 12px;
 }
 
 .form-container {
@@ -443,7 +636,7 @@ input[type="submit"]:hover {
   border: none;
 }
 
-.contact-me-section-container > p {
+.contact-me-section-content > p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -459,6 +652,43 @@ input[type="submit"]:hover {
   height: 5px;
   position: absolute;
   bottom: 8px;
+  left: calc(50% - 68px);
   background: #0d151e;
   border-radius: 10px;
+}
+
+/* Desktop version of about me section */
+@media screen and (min-width: 768px) {
+  .contact-me-section-container {
+    padding: 79px 74px 48px;
+  }
+
+  .contact-me-section-content {
+    width: 100%;
+    background: url(../assets/desktop/contact\ form\ background\ shapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    background-position-y: 0;
+    padding: 48px 24px 0;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-me-section-content > p {
+    max-width: 570px;
+  }
+
+  .form-container {
+    max-width: 450px;
+    align-items: center;
+  }
+
+  .footer-indicator {
+    display: none;
+  }
 }

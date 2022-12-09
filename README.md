@@ -49,6 +49,14 @@
 - **[Set up linters]**
 - **[Add navigation bar for mobile version]**
 - **[Add intro header section for mobile version]**
+- **[Add my works section for mobile version]**
+- **[Add about me section for mobile version]**
+- **[Add contact me section for mobile version]**
+- **[Add navigation bar for desktop version]**
+- **[Add intro header section for desktop version]**
+- **[Add my works section for desktop version]**
+- **[Add about me section for desktop version]**
+- **[Add contact me section for desktop version]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
