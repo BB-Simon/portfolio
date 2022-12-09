@@ -40,6 +40,7 @@ ul li {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .nav-items-wrapper {
@@ -534,7 +535,7 @@ ul li {
     margin-right: 12px;
     margin-bottom: 0;
   }
-  
+
   .language-item > h5 {
     margin-left: 0;
     margin-top: 16px;
@@ -544,28 +545,33 @@ ul li {
 /* Contact me section styles */
 .contact-me-section {
   background: #fff;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .contact-me-section-container {
-  background: #6070ff url(../assets/contact\ form\ shapes-mobile@2x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 100%;
-  background-position-y: 20px;
+  background: #6070ff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 104px 24px 0;
+  padding: 22px 0 48px;
   border-top-left-radius: 100px;
 }
 
-.contact-me-section-container > h1 {
+.contact-me-section-content {
+  background: url(../assets/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 100%;
+  background-position-y: 0;
+  padding: 48px 24px 0;
+  position: relative;
+}
+
+.contact-me-section-content > h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -573,7 +579,7 @@ ul li {
   line-height: 52px;
   color: #fff;
   text-align: center;
-  margin-bottom: 12px;
+  margin: 48px 0 12px;
 }
 
 .form-container {
@@ -633,7 +639,7 @@ input[type="submit"]:hover {
   border: none;
 }
 
-.contact-me-section-container > p {
+.contact-me-section-content > p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -649,6 +655,35 @@ input[type="submit"]:hover {
   height: 5px;
   position: absolute;
   bottom: 8px;
+  left: calc(50% - 68px);
   background: #0d151e;
   border-radius: 10px;
+}
+
+/* Desktop version of about me section */
+@media screen and (min-width: 768px) {
+  .contact-me-section-container {
+    padding: 79px 74px 48px;
+  }
+  .contact-me-section-content {
+    width: 100%;
+    background: url(../assets/desktop/contact\ form\ background\ shapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    background-position-y: 0;
+    padding: 48px 24px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-me-section-content > p {
+    max-width: 570px;
+  }
+  .form-container {
+    max-width: 450px;
+    align-items: center;
+  }
 }
