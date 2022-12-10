@@ -191,11 +191,39 @@ ul li {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
+    animation-name: leftToOnThePlace;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes leftToOnThePlace {
+    0% {
+      transform: translateX(-2000px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 
   #description {
     font-size: 20px;
     line-height: 28px;
+    animation-name: rightToOnthePlace;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes rightToOnthePlace {
+    0% {
+      transform: translateX(2000px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 
