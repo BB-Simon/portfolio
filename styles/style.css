@@ -196,13 +196,14 @@ ul li {
     animation-timing-function: linear;
     animation-iteration-count: 1;
   }
-  
+
   @keyframes leftToOnThePlace {
     0% {
       transform: translateX(-2000px);
     }
+
     100% {
-      transform: translateX(0px);
+      transform: translateX(0);
     }
   }
 
@@ -221,7 +222,7 @@ ul li {
     }
 
     100% {
-      transform: translateX(0px);
+      transform: translateX(0);
     }
   }
 }
