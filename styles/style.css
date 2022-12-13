@@ -53,6 +53,11 @@ ul li {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: transform 1s;
+}
+
+.nav-item:hover {
+  transform: scale(120%);
 }
 
 .nav-item > a {
