@@ -1,3 +1,5 @@
+const seeProjectDetailsBtn = document.querySelector('#see-projects-btn');
+
 const projectData = [
     {
       id: 1,
@@ -60,3 +62,12 @@ const projectData = [
       liveLink: 'https://github.com/emekaemmanuel/res_portfolio',
     },
   ];
+
+  const openProjectDetailsModal = e => {
+    e.preventDefault();
+    const body = document.body;
+    // i.e below
+    // const detailsModal = document.querySelector('details-modal');
+    // body.appendChild()
+  }
+  seeProjectDetailsBtn.addEventListener('click', openProjectDetailsModal)
