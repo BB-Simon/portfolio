@@ -80,6 +80,87 @@ ul li {
   display: none;
 }
 
+/* Modal menu styles */
+.modal-container {
+  /* Position */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  z-index: 1;
+
+  /* Theme */
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  transition: width 0.3s linear;
+}
+
+.expanded {
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
+.modal-header {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-nav {
+  padding: 0 16px 0 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-section {
+  width: 100%;
+  height: calc(100% - 48px);
+  padding: 14px 28px 8px;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item {
+  margin-bottom: 40px;
+}
+
+.menu-item > a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-indicator {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 /* Desktop version of navbar */
 @media screen and (min-width: 768px) {
   .navbar {
@@ -101,6 +182,15 @@ ul li {
     display: flex;
     align-items: center;
   }
+
+  .modal-container {
+    display: none;
+  }
+}
+
+.reduce-opacity {
+  opacity: 0.1;
+  transition: opacity 0.3s linear;
 }
 
 /* Header Styles */
@@ -112,7 +202,7 @@ ul li {
   background-size: contain;
   background-position-y: 60px;
   border-bottom-left-radius: 100px;
-  margin: 48px 0 114px;
+  margin: 48px 0 0;
 
   /* header layout */
   display: flex;
@@ -236,8 +326,9 @@ ul li {
 .works-section {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 24px;
-  margin-bottom: 114px;
+  padding: 114px 24px 0;
+
+  /* margin-top: 114px; */
 }
 
 .card-conntainer {
@@ -449,8 +540,12 @@ ul li {
 
 /* About section styles */
 .about-section {
+  padding-top: 114px;
+}
+
+.about-container {
   background: #fff;
-  padding: 114px 24px;
+  padding: 114px 24px 24px;
   border-top-right-radius: 100px;
 }
 
@@ -578,6 +673,7 @@ ul li {
 
 /* Contact me section styles */
 .contact-me-section {
+  padding-top: 114px;
   background: #fff;
 }
 
