@@ -1,5 +1,5 @@
 const menuIcon = document.getElementById('menu-icon');
-const header = document.getElementById('header');
+const logo = document.getElementById('logo');
 const mainContent = document.getElementById('main-content');
 const menuModal = document.getElementById('menu-modal');
 const menuCloseBtn = document.getElementById('close-btn');
@@ -8,14 +8,16 @@ const listItems = document.querySelectorAll('.menu-item');
 // Listener's functions
 const openMenuModal = () => {
   menuModal.classList.add('expanded');
-  header.classList.add('reduce-opacity');
-  mainContent.classList.add('reduce-opacity');
+  logo.classList.add('blur-bg');
+  menuIcon.classList.add('blur-bg');
+  mainContent.classList.add('blur-bg');
 };
 
 const closeMenuModal = () => {
   menuModal.classList.remove('expanded');
-  header.classList.remove('reduce-opacity');
-  mainContent.classList.remove('reduce-opacity');
+  logo.classList.remove('blur-bg');
+  menuIcon.classList.remove('blur-bg');
+  mainContent.classList.remove('blur-bg');
 };
 
 // Listeners
