@@ -153,12 +153,13 @@ ul li {
   text-decoration: none;
 }
 
-.modal-indicator {
+.expanded .modal-indicator {
   width: 134px;
   height: 5px;
   background: #0d151e;
   border-radius: 10px;
   margin: 0 auto;
+  transition: all 0.3s linear;
 }
 
 /* Desktop version of navbar */
