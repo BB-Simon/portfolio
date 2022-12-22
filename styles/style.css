@@ -190,7 +190,7 @@ ul li {
 
 .blur-bg {
   filter: blur(6px);
-  transition: opacity 0.3s linear;
+  transition: blur 0.3s linear;
 }
 
 /* Header Styles */
