@@ -19,27 +19,27 @@
 
 <body>
     <!-- Navigation bar -->
-    <header>
+    <header id="header">
         <nav class="navbar">
             <ul class="nav-items-wrapper">
-                <li class="nav-item">
+                <li id="logo" class="nav-item">
                     <a class="logo-wrapper" href="/">
                         <img src="./assets/My Logo.png" alt="Logo">
                     </a>
                 </li>
-                <li class="nav-item nav-item-mobile">
+                <li id="menu-icon" class="nav-item nav-item-mobile">
                     <img class="hamburger_btn" src="./assets/Icon - Menu.png" alt="Menu">
                 </li>
                 <li class="nav-item nav-item-desktop">
                     <ul class="nav-item-desktop-wrapper">
                         <li class="nav-item">
-                            <a href="#portfolio">Portoflio</a>
+                            <a href="#works">Portoflio</a>
                         </li>
                         <li class="nav-item">
                             <a href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </li>
@@ -48,7 +48,7 @@
     </header>
 
     <!-- Main content -->
-    <main>
+    <main id="main-content">
         <!-- Header section -->
         <section class="header-section">
             <header class="header">
@@ -92,11 +92,11 @@
         </section>
 
         <!-- Works section -->
-        <section class="works-section">
-            <div id="order3" class="card-conntainer flex-reverse">
+        <section id="works" class="works-section">
+            <!-- <div id="order3" class="card-conntainer flex-reverse">
                 <img src="./assets/Snapshoot Portfolio.png" alt="Portfolio">
                 <div class="card-content">
-                    <h2 id="card-title">Tonic</h2>
+                    <h2 class="card-title">Tonic</h2>
                     <div class="card-meta">
                         <span class="card-meta-item">CANOPY</span>
                         <div class="divider"></div>
@@ -121,7 +121,7 @@
             <div id="order4" class="card-conntainer">
                 <img src="./assets/snapshoot-2.png" alt="Portfolio">
                 <div class="card-content">
-                    <h2 id="card-title">Multi-Post <br />Stories</h2>
+                    <h2 class="card-title">Multi-Post <br />Stories</h2>
                     <div class="card-meta">
                         <span class="card-meta-item">CANOPY</span>
                         <div class="divider"></div>
@@ -145,7 +145,7 @@
             <div id="order2" class="card-conntainer">
                 <img src="./assets/snapshoot-3.png" alt="Portfolio">
                 <div class="card-content">
-                    <h2 id="card-title">Tonic</h2>
+                    <h2 class="card-title">Tonic</h2>
                     <div class="card-meta">
                         <span class="card-meta-item">CANOPY</span>
                         <div class="divider"></div>
@@ -169,7 +169,7 @@
             <div id="order1" class="card-conntainer flex-reverse">
                 <img src="./assets/snapshoot-4.png" alt="Portfolio">
                 <div class="card-content">
-                    <h2 id="card-title">Multi-Post <br />Stories</h2>
+                    <h2 class="card-title">Multi-Post <br />Stories</h2>
                     <div class="card-meta">
                         <span class="card-meta-item">CANOPY</span>
                         <div class="divider"></div>
@@ -189,108 +189,143 @@
                         <button class="card-btn">See Project</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <!-- About section -->
-        <section class="about-section">
-            <div id="about-content">
-                <h2 id="about-title">About <br />Myself</h2>
-                <p id="about-description">
-                    Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and
-                    experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </p>
-                
-                <h4 id="title-contact">
-                    LET’S CONNECT
-                </h4>
-                <ul class="icons-wrapper">
-                    <li>
-                        <a href="https://twitter.com/bb_s_imon">
-                            <img src="./assets/icons/twitter.svg" alt="Twitter">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/bb-simon/">
-                            <img src="./assets/icons/linkedin-icon.svg" alt="Linkedin" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./assets/icons/m-icon.svg" alt="M">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/BB-Simon">
-                            <img src="./assets/icons/github.svg" alt="Github">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/bb_s_imon">
-                            <img src="./assets/icons/share.svg" alt="Share">
-                        </a>
-                    </li>
-                </ul>
-                <div class="card-cta-wrapper">
-                    <button class="card-btn">Get my resume</button>
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div id="about-content">
+                    <h2 id="about-title">About <br />Myself</h2>
+                    <p id="about-description">
+                        Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+                        experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
+                    
+                    <h4 id="title-contact">
+                        LET’S CONNECT
+                    </h4>
+                    <ul class="icons-wrapper">
+                        <li>
+                            <a href="https://twitter.com/bb_s_imon">
+                                <img src="./assets/icons/twitter.svg" alt="Twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/bb-simon/">
+                                <img src="./assets/icons/linkedin-icon.svg" alt="Linkedin" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./assets/icons/m-icon.svg" alt="M">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/BB-Simon">
+                                <img src="./assets/icons/github.svg" alt="Github">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/bb_s_imon">
+                                <img src="./assets/icons/share.svg" alt="Share">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-cta-wrapper">
+                        <button class="card-btn">Get my resume</button>
+                    </div>
                 </div>
-            </div>
-
-            <!-- skills -->
-            <ul id="skills" class="skills-list">
-                <li class="skills-list-item">
-                    <h3>Languages</h3>
-                    <img src="./assets/chevron-down.png" alt="Languages">
-                </li>
-                <ul class="languages">
-                    <li class="language-item">
-                        <img src="./assets/javascript.png" alt="JavaScript">
-                        <h5>JavaScript</h5>
+    
+                <!-- skills -->
+                <ul id="skills" class="skills-list">
+                    <li class="skills-list-item">
+                        <h3>Languages</h3>
+                        <img src="./assets/chevron-down.png" alt="Languages">
                     </li>
-                    <li class="language-item">
-                        <img src="./assets/html.png" alt="html">
-                        <h5>HTML</h5>
+                    <ul class="languages">
+                        <li class="language-item">
+                            <img src="./assets/javascript.png" alt="JavaScript">
+                            <h5>JavaScript</h5>
+                        </li>
+                        <li class="language-item">
+                            <img src="./assets/html.png" alt="html">
+                            <h5>HTML</h5>
+                        </li>
+                        <li class="language-item">
+                            <img src="./assets/css.png" alt="css">
+                            <h5>CSS</h5>
+                        </li>
+                    </ul>
+    
+                    <li class="skills-list-item">
+                        <h3>Frameworks</h3>
+                        <img src="./assets/chevron-right.png" alt="Frameworks">
                     </li>
-                    <li class="language-item">
-                        <img src="./assets/css.png" alt="css">
-                        <h5>CSS</h5>
+                    <div class="skills-list-item-divider"></div>
+                    <li class="skills-list-item">
+                        <h3>Skills</h3>
+                        <img src="./assets/chevron-right.png" alt="Skills">
                     </li>
+                    <div class="skills-list-item-divider"></div>
                 </ul>
-
-                <li class="skills-list-item">
-                    <h3>Frameworks</h3>
-                    <img src="./assets/chevron-right.png" alt="Frameworks">
-                </li>
-                <div class="skills-list-item-divider"></div>
-                <li class="skills-list-item">
-                    <h3>Skills</h3>
-                    <img src="./assets/chevron-right.png" alt="Skills">
-                </li>
-                <div class="skills-list-item-divider"></div>
-            </ul>
+            </div>
         </section>
 
         <!-- Contact me section -->
-        <section class="contact-me-section">
-            <div class="contact-me-section-container">
-                <div class="contact-me-section-content">
-                    <h1>Contact me</h1>
-                    <p>
-                        If you have an application you are interested in developing, a feature that you need built or a project that needs
-                        coding. I’d love to help with it
-                    </p>
-                    <form action="https://formspree.io/f/xdojqlba" method="post" class="form-container">
-                        <input id="name" type="text" placeholder="Your name" minlength="3" maxlength="30" required>
-                        <input id="email" type="email" placeholder="Your email" required>
-                        <textarea name="message" id="message" cols="30" rows="10" minlength="5" maxlength="500"
-                            placeholder="Write your message here" required></textarea>
-                        <input type="submit" value="Get It Touch">
-                    </form>
-                    <span class="footer-indicator"></span>
+        <section id="contact" class="contact-me-section">
+            <article class="contact-section-wrapper">
+                <div class="contact-me-section-container">
+                    <div class="contact-me-section-content">
+                        <h1>Contact me</h1>
+                        <p>
+                            If you have an application you are interested in developing, a feature that you need built or a project that needs
+                            coding. I’d love to help with it
+                        </p>
+                        <form action="https://formspree.io/f/xdojqlba" method="post" class="form-container">
+                            <input type="text" placeholder="Your name" minlength="3" maxlength="30" required>
+                            <input type="email" placeholder="Your email" required>
+                            <textarea name="message" id="message" cols="30" rows="10" minlength="5" maxlength="500"
+                                placeholder="Write your message here" required></textarea>
+                            <input type="submit" value="Get It Touch">
+                        </form>
+                        <span class="footer-indicator"></span>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
     </main>
+
+    <!-- Mobile modal nemu -->
+    <section id="menu-modal" class="modal-container">
+        <header class="modal-header">
+            <nav class="modal-nav">
+                <button id="close-btn" class="close-btn">
+                    <img src="./assets/icons/close-icon.png" alt="Close Icon">
+                </button>
+            </nav>
+        </header>
+        <section class="menu-section">
+            <ul class="menu-items-wrapper">
+                <li class="menu-item">
+                    <a href="#works">Portfolio</a>
+                </li>
+    
+                <li class="menu-item">
+                    <a href="#about">About</a>
+                </li>
+    
+                <li class="menu-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="modal-indicator"></div>
+        </section>
+    </section>
+
+    <!-- Project detail's modal -->
+    <section id="project-popup"></section>
+
 </body>
 <script src="./js/index.js"></script>
 </html>
