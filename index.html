@@ -93,103 +93,7 @@
 
         <!-- Works section -->
         <section id="works" class="works-section">
-            <!-- <div id="order3" class="card-conntainer flex-reverse">
-                <img src="./assets/Snapshoot Portfolio.png" alt="Portfolio">
-                <div class="card-content">
-                    <h2 class="card-title">Tonic</h2>
-                    <div class="card-meta">
-                        <span class="card-meta-item">CANOPY</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">Back End Dev</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">2015</span>
-                    </div>
-                    <p id="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="card-categories-wrapper">
-                        <li class="card-category">html</li>
-                        <li class="card-category">css</li>
-                        <li class="card-category">javascript</li>
-                    </ul>
-                    <div class="card-cta-wrapper">
-                        <button class="card-btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="order4" class="card-conntainer">
-                <img src="./assets/snapshoot-2.png" alt="Portfolio">
-                <div class="card-content">
-                    <h2 class="card-title">Multi-Post <br />Stories</h2>
-                    <div class="card-meta">
-                        <span class="card-meta-item">CANOPY</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">Back End Dev</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">2015</span>
-                    </div>
-                    <p id="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="card-categories-wrapper">
-                        <li class="card-category">html</li>
-                        <li class="card-category">css</li>
-                        <li class="card-category">javascript</li>
-                    </ul>
-                    <div class="card-cta-wrapper">
-                        <button class="card-btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div id="order2" class="card-conntainer">
-                <img src="./assets/snapshoot-3.png" alt="Portfolio">
-                <div class="card-content">
-                    <h2 class="card-title">Tonic</h2>
-                    <div class="card-meta">
-                        <span class="card-meta-item">CANOPY</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">Back End Dev</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">2015</span>
-                    </div>
-                    <p id="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="card-categories-wrapper">
-                        <li class="card-category">html</li>
-                        <li class="card-category">css</li>
-                        <li class="card-category">javascript</li>
-                    </ul>
-                    <div class="card-cta-wrapper">
-                        <button class="card-btn">See Project</button>
-                    </div>
-                </div>
-            </div>
-            <div id="order1" class="card-conntainer flex-reverse">
-                <img src="./assets/snapshoot-4.png" alt="Portfolio">
-                <div class="card-content">
-                    <h2 class="card-title">Multi-Post <br />Stories</h2>
-                    <div class="card-meta">
-                        <span class="card-meta-item">CANOPY</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">Back End Dev</span>
-                        <div class="divider"></div>
-                        <span class="card-meta-item muted">2015</span>
-                    </div>
-                    <p id="card-description">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <ul class="card-categories-wrapper">
-                        <li class="card-category">html</li>
-                        <li class="card-category">css</li>
-                        <li class="card-category">javascript</li>
-                    </ul>
-                    <div class="card-cta-wrapper">
-                        <button class="card-btn">See Project</button>
-                    </div>
-                </div>
-            </div> -->
+            <!-- Dynamic card content comes here from js -->
         </section>
 
         <!-- About section -->
@@ -282,11 +186,14 @@
                             If you have an application you are interested in developing, a feature that you need built or a project that needs
                             coding. I’d love to help with it
                         </p>
-                        <form action="https://formspree.io/f/xdojqlba" method="post" class="form-container">
-                            <input type="text" placeholder="Your name" minlength="3" maxlength="30" required>
-                            <input type="email" placeholder="Your email" required>
+                        <!-- <form action="https://formspree.io/f/xdojqlba" method="post" class="form-container"> -->
+                        <form id="contact-form" class="form-container">
+                            <input id="name" name="name" type="text" placeholder="Your name" minlength="3" maxlength="30" required>
+                            <input id="email" type="email" name="email" placeholder="Your email" required>
                             <textarea name="message" id="message" cols="30" rows="10" minlength="5" maxlength="500"
                                 placeholder="Write your message here" required></textarea>
+                            
+                            <p class="error"></p>
                             <input type="submit" value="Get It Touch">
                         </form>
                         <span class="footer-indicator"></span>
@@ -324,7 +231,9 @@
     </section>
 
     <!-- Project detail's modal -->
-    <section id="project-popup"></section>
+    <section id="project-popup">
+        <!-- Dynamic popup content comes here -->
+    </section>
 
 </body>
 <script src="./js/index.js"></script>

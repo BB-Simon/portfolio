@@ -903,6 +903,21 @@ input[type="submit"]:hover {
   margin-bottom: 80px;
 }
 
+.error {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(216, 0, 12, 1);
+  background-color: rgba(255, 186, 186, 1);
+  text-align: center;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  display: none;
+}
+
 .footer-indicator {
   width: 134px;
   height: 5px;
