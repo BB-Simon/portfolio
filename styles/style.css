@@ -88,7 +88,7 @@ ul li {
   left: 0;
   width: 0%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
 
   /* Theme */
   background: #6070ff;
@@ -126,6 +126,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .menu-section {
@@ -197,7 +198,7 @@ ul li {
 /* Header Styles */
 .header-section {
   width: 100%;
-  min-height: calc(100vh - 48px);
+  min-height: calc(90vh - 48px);
   background: #fff url(../assets/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -287,10 +288,11 @@ ul li {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
-    animation-name: leftToOnThePlace;
+
+    /* animation-name: leftToOnThePlace;
     animation-duration: 2.5s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
   }
 
   @keyframes leftToOnThePlace {
@@ -306,10 +308,11 @@ ul li {
   #description {
     font-size: 20px;
     line-height: 28px;
-    animation-name: rightToOnthePlace;
+
+    /* animation-name: rightToOnthePlace;
     animation-duration: 2.5s;
     animation-timing-function: linear;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
   }
 
   @keyframes rightToOnthePlace {
@@ -361,7 +364,7 @@ ul li {
   margin-bottom: 0;
 }
 
-#card-title {
+.card-title {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -469,11 +472,117 @@ ul li {
   transition: all 0.3s ease-in-out;
 }
 
+/* Works detail modal style */
+#project-detail-modal-overlay {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+  padding: 16px;
+}
+
+#project-detail-modal {
+  /* display: none; */
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: transparent;
+  padding: 50px 16px;
+}
+
+/* #project-detail-modal::-webkit-scrollbar,
+#project-detail-modal::-webkit-scrollbar-track-piece {
+  display: none;
+} */
+
+.project-modal-card {
+  width: 96%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.project-modal-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-modal-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.project-modal-section {
+  width: 100%;
+}
+
+.project-modal-section > img {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 12px;
+}
+
+.project-card-cta-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.project-btn {
+  min-width: 142px;
+  min-height: 40px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+
+.project-btn:first-child {
+  margin-right: 12px;
+}
+
+.project-btn > span {
+  margin-right: 13px;
+}
+
+.project-modal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-btn > img {
+  width: 24px;
+  height: 24px;
+}
+
+.p-card-title {
+  margin: 0;
+}
+
+.card-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ebecf0;
+  margin: 20px 0;
+}
+
 /* Desktop version of works section */
 @media screen and (min-width: 768px) {
   .works-section {
     padding: 0 142px;
-    margin-bottom: 54px;
   }
 
   .card-conntainer {
@@ -481,10 +590,6 @@ ul li {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  .card-conntainer:last-child {
-    margin-bottom: 88px;
   }
 
   .flex-reverse {
@@ -523,7 +628,7 @@ ul li {
     height: 100%;
   }
 
-  #card-title {
+  .card-title {
     font-size: 40px;
     line-height: 52px;
   }
@@ -536,6 +641,27 @@ ul li {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  #project-detail-modal {
+    padding: 77px 20px;
+  }
+
+  .project-modal-section > img {
+    margin: 36px 0 42px;
+  }
+
+  .project-modal-card {
+    width: 80%;
+  }
+
+  .project-modal-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-card-description {
+    padding-bottom: 50px;
   }
 }
 
@@ -629,9 +755,9 @@ ul li {
 
 /* Desktop version of about me section */
 @media screen and (min-width: 768px) {
-  .about-section {
-    padding: 114px 142px;
+  .about-container {
     display: flex;
+    padding: 114px 142px;
   }
 
   #about-content {
