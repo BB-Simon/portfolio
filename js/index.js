@@ -228,8 +228,10 @@ contactForm.addEventListener('submit', (e) => {
   const email = e.target.email.value;
   const error = document.querySelector('.error');
   const isSubmitOk = validateEmail(email);
+
   if (isSubmitOk) {
     error.style.display = 'none';
+    contactForm.submit();
   } else {
     error.style.display = 'block';
     error.innerHTML = 'Email must content only lower case charecters';
