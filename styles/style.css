@@ -474,7 +474,7 @@ ul li {
 
 /* Works detail modal style */
 #project-detail-modal-overlay {
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 1;
   left: 0;
@@ -488,7 +488,7 @@ ul li {
 }
 
 #project-detail-modal {
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 100;
   left: 0;
@@ -499,6 +499,11 @@ ul li {
   background: transparent;
   padding: 50px 16px;
 }
+
+/* #project-detail-modal::-webkit-scrollbar,
+#project-detail-modal::-webkit-scrollbar-track-piece {
+  display: none;
+} */
 
 .project-modal-card {
   width: 96%;
@@ -539,6 +544,7 @@ ul li {
 .project-btn {
   min-width: 142px;
   min-height: 40px;
+  text-decoration: none;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: normal;
